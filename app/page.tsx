@@ -216,8 +216,7 @@ export default function Home() {
       <div aria-hidden className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/10 via-black/20 to-black/35" />
       <div
         aria-hidden
-        className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0),rgba(0,0,0,0.45))]"
-      />
+        className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0),rgba(0,0,0,0.45))]"/>
 
       <audio ref={audioRef} loop preload="auto" playsInline>
         <source src="/music.mp3" type="audio/mpeg" />
@@ -230,24 +229,15 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="absolute inset-0 flex items-center justify-center overflow-x-hidden overflow-y-auto no-scrollbar overscroll-contain pt-[calc(env(safe-area-inset-top)+1.25rem)] pb-[calc(env(safe-area-inset-bottom)+1.25rem)]"
-        >
+          className="absolute inset-0 flex items-center justify-center overflow-x-hidden overflow-y-auto no-scrollbar overscroll-contain pt-[calc(env(safe-area-inset-top)+1.25rem)] pb-[calc(env(safe-area-inset-bottom)+1.25rem)]">
           <div className="relative z-10 w-full max-w-md px-4 sm:px-5">
             <div className="rounded-[44px] bg-white/15 backdrop-blur-2xl border border-white/25 shadow-[0_30px_120px_rgba(0,0,0,0.35)] px-5 py-7 sm:px-8 sm:py-10 text-center">
-              <motion.div
-                animate={{ y: [0, -12, 0], rotate: [0, 3, -3, 0] }}
-                transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
-                className="mx-auto mb-6 w-20 h-20 sm:w-28 sm:h-28 rounded-[26px] sm:rounded-[28px] bg-white/30 backdrop-blur-xl border-4 border-white/70 shadow-2xl flex items-center justify-center"
-              >
-                <IoHeartSharp className="text-white text-5xl sm:text-6xl drop-shadow-2xl" />
-              </motion.div>
 
               <motion.h1
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-3xl sm:text-5xl md:text-6xl font-black text-white text-shadow-cute"
-              >
+                className="text-3xl sm:text-5xl md:text-6xl font-black text-white text-shadow-cute">
                 Hei kamu.
               </motion.h1>
 
@@ -255,22 +245,9 @@ export default function Home() {
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="mt-3 text-[15px] sm:text-lg md:text-xl text-white/90 font-semibold leading-relaxed"
-              >
-                Kalau hari ini urusan hati lagi berisik,
-                <br />
-                sini... aku titipin semangat kecil buat kamu.
+                className="mt-3 text-[15px] sm:text-lg md:text-xl text-white/90 font-semibold leading-relaxed">
+                Kalau hari ini urusan hati lagi berisik, sini... aku titipin semangat kecil buat kamu.
               </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.35 }}
-                className="mt-6 inline-flex items-center gap-2 bg-white/25 backdrop-blur-md px-4 py-2 rounded-full border-2 border-white/60 shadow-lg"
-              >
-                <IoMusicalNotesSharp className="text-white text-lg" />
-                <span className="text-white font-bold text-sm sm:text-base">disaranin nyalain suara ya</span>
-              </motion.div>
 
               <motion.button
                 initial={{ scale: 0 }}
@@ -279,22 +256,11 @@ export default function Home() {
                 whileHover={{ scale: 1.08, rotate: [0, -2, 2, 0] }}
                 whileTap={{ scale: 0.95 }}
                 onClick={startExperience}
-                className="mt-8 w-full bg-white/90 backdrop-blur-md text-slate-900 font-black text-xl sm:text-2xl px-8 py-5 rounded-full shadow-2xl border-4 border-white/80"
-              >
+                className="mt-8 w-full bg-white/90 backdrop-blur-md text-slate-900 font-black text-xl sm:text-2xl px-8 py-5 rounded-full shadow-2xl border-4 border-white/80">
                 <span className="inline-flex items-center justify-center gap-2">
-                  <IoSparklesSharp className="text-2xl" />
                   Mulai
                 </span>
               </motion.button>
-
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.75 }}
-                transition={{ delay: 0.8 }}
-                className="mt-4 text-white text-xs sm:text-sm font-semibold"
-              >
-                (nanti bisa tap “Lanjut” atau geser kartunya)
-              </motion.p>
             </div>
           </div>
         </motion.div>
